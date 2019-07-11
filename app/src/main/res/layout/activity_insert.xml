@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_insert"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context=".InsertActivity">
+    <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama : "
+            android:textSize="20sp"/>
+    <TextView
+            android:id="@+id/tvNilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nilai : "
+            android:layout_below="@id/tvNama"
+            android:textSize="20sp"/>
+    <TextView
+            android:id="@+id/tvJurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jurusan : "
+            android:layout_below="@id/tvNilai"
+            android:textSize="20sp"/>
+
+
+    <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:layout_toRightOf="@+id/tvNama"
+            android:layout_alignBaseline="@+id/tvNama"/>
+    <EditText
+            android:id="@+id/edtNilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nilai"
+            android:layout_toRightOf="@+id/tvNilai"
+            android:layout_alignBaseline="@+id/tvNilai"/>
+
+    <EditText
+            android:id="@+id/edtJurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Jurusan"
+            android:layout_toRightOf="@+id/tvJurusan"
+            android:layout_alignBaseline="@+id/tvJurusan"/>
+    <LinearLayout
+            android:id="@+id/Linearlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tvJurusan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+        <Button
+                android:id="@+id/btInserting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insert"/>
+        <Button
+                android:id="@+id/btBackGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"/>
+    </LinearLayout>
+
+</RelativeLayout>
